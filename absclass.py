@@ -21,11 +21,7 @@ class NotificadorSlack(Notificador):
 
 ###################################################################### Clase Admin
 
-
 class Administrador_Notificaciones:
-    def __init__(self):
-        pass
-
     def enviar(self, destinatario, mensaje, notificador):
         nt = notificador()
         print(nt.enviar_notificacion(destinatario, mensaje))
