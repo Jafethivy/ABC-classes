@@ -1,4 +1,4 @@
 import absclass
 
-n1 = absclass.Administrador_Notificaciones("usuario1", "mensaje1", absclass.NotificadorCE)
-n1.enviar()
+n1 = absclass.Administrador_Notificaciones()
+n1.enviar("carlos","hola carlos",absclass.NotificadorSMS)
