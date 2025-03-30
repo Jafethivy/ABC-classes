@@ -12,5 +12,6 @@ Implemente clases concretas para diferentes métodos de notificación: Notificad
 Cree una clase AdministradorNotificaciones. Esta clase debe tener un método llamado enviar(self, destinatario, mensaje, notificador). El parámetro notificador debe aceptar cualquier objeto que se adhiera a la "interfaz" Notificador (es decir, que tenga un método enviar_notificacion). El AdministradorNotificaciones debe usar el notificador proporcionado para enviar la notificación. 
 # Flexibilidad y Extensibilidad:
 El diseño debe facilitar la adición de nuevos métodos de notificación en el futuro. La lógica central de notificación (dentro de AdministradorNotificaciones) no debe necesitar ser modificada cuando se agregan nuevos métodos de notificación. 
-# Objetivos de Aprendizaje:
-Comprender el concepto de interfaces en la programación orientada a objetos (POO). Aprender a simular interfaces en Python utilizando "duck typing" y clases base abstractas. Aplicar el polimorfismo para crear código flexible y extensible. Diseñar e implementar un sistema que pueda adaptarse fácilmente a cambios futuros. Practicar la organización y modularidad del código.
+
+# Modo de uso del script:
+El script usa la libreria dotenv para leer un archivo ".env" donde se encuentra el BOT_TOKEN para poder enviar el mensaje desde el bot de slack, por lo que deberá crear un archivo ".env" en el cual ingresara el siguiente texto: SLACK_BOT_TOKEN=xoxb-(el token proporcionado por slack).
