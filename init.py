@@ -9,6 +9,7 @@ while(a==1):
     print("2. SMS")
     print("3. Slack")
     opcion = input("Opcion: ")
+    
     try:
         opcion = int(opcion)
     except ValueError:
