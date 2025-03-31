@@ -15,3 +15,4 @@ El diseño debe facilitar la adición de nuevos métodos de notificación en el 
 
 # Modo de uso del script:
 El script usa la libreria dotenv para leer un archivo ".env" donde se encuentra el BOT_TOKEN para poder enviar el mensaje desde el bot de slack, por lo que deberá crear un archivo ".env" en el cual ingresara el siguiente texto: SLACK_BOT_TOKEN=xoxb-(el token proporcionado por slack).
+Para más información sobre como funciona: https://api.slack.com/messaging/sending
