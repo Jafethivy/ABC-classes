@@ -1,4 +1,4 @@
-def slack(mensaje):
+def slack():
     import logging
     import os
     from slack_sdk import WebClient
@@ -11,7 +11,7 @@ def slack(mensaje):
     load_dotenv('.env')
     client = WebClient(token=os.environ.get("SLACK_BOT_TOKEN"))
     channel_id = "C08KPRK30UW"
-    channel_txt = mensaje
+    channel_txt = input("Escribe el mensaje que quieres enviar al canal: ")
 
     try:
         response = client.chat_postMessage(

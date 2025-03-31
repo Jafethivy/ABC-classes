@@ -29,5 +29,6 @@ if opcion==1 | opcion==2:
     n1 = Administrador_Notificaciones()
     n1.enviar(input("Escribe al destinatario: "),input("Escribe el mensaje a enviar: "), na)
 else:
-    n1 = Administrador_Notificaciones()
-    n1.enviar("slack",input("Escribe el mensaje a enviar: "), na)
+    os.system("cls")
+    from slackAPI.selectconver import slack
+    slack()

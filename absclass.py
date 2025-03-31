@@ -16,17 +16,12 @@ class NotificadorSMS(Notificador):
         return f"Enviando SMS a {destinatario}: {mensaje}"
 
 class NotificadorSlack(Notificador):
-    def enviar_notificacion(self, mensaje):
-        from slackAPI.selectconver import slack
-        slack(mensaje)
+    def enviar_notificacion(self, destinatario, mensaje):
+        return f"Enviando Slack a {destinatario}: {mensaje}"
 
 ###################################################################### Clase Admin
 
 class Administrador_Notificaciones:
     def enviar(self, destinatario, mensaje, notificador):
         nt = notificador()
-        if destinatario == "slack":
-            nt.enviar_notificacion(mensaje)
-        else:
-            print(nt.enviar_notificacion(destinatario, mensaje))
-        
+        print(nt.enviar_notificacion(destinatario, mensaje))
